@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feria Digital Agropecuaria</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>Feria Digital Agropecuaria</h1>
+    <p>Explora cultivos, fotos, historias y contáctanos.</p>
+  </header>
+
+  <main class="contenedor">
+    <!-- VISTA PRINCIPAL (MENÚ) -->
+    <section id="vista-inicio" class="vista activa">
+      <div class="grid-botones">
+        <button class="btn" data-vista="cultivo">Tipo de cultivo</button>
+        <button class="btn" data-vista="galeria">Galería de fotos</button>
+        <button class="btn" data-vista="historias">Historias</button>
+        <button class="btn btn-principal" data-vista="contacto">Contacto</button>
+      </div>
+    </section>
+
+    <!-- VISTA: TIPO DE CULTIVO -->
+    <section id="vista-cultivo" class="vista">
+      <h2>Tipo de cultivo</h2>
+      <p>Aquí puedes poner información de cultivos (café, plátano, cacao, etc.).</p>
+
+      <button class="btn-volver" id="volver-cultivo">← Volver</button>
+    </section>
+
+    <!-- VISTA: GALERÍA -->
+    <section id="vista-galeria" class="vista">
+      <h2>Galería de fotos</h2>
+      <p>Después puedes agregar imágenes o tarjetas con fotos del proyecto.</p>
+
+     <img src="img/cafe.jpg" alt="Cultivo de café">
+
+    <!-- VISTA: HISTORIAS -->
+    <section id="vista-historias" class="vista">
+      <h2>Historias</h2>
+      <p>Cuenta historias de la vereda, productores, buenas prácticas, etc.</p>
+
+      <button class="btn-volver" id="volver-historias">← Volver</button>
+    </section>
+
+    <!-- VISTA: CONTACTO (NUEVA INTERFAZ) -->
+    <section id="vista-contacto" class="vista">
+      <h2>Contacto</h2>
+
+      <div class="tarjeta">
+        <p><strong>Nombre:</strong> Alejandra Valencia Villa</p>
+        <p><strong>Correo:</strong> alejitaflorez2014@gmail.com</p>
+        <p><strong>Celular:</strong> +57 310 248 8861</p>
+        <p><strong>Ubicación:</strong> Santa Barbara, Antioquia</p>
+      </div>
+
+      <div class="acciones">
+        <a class="btn-link" href="mailto:tucorreo@email.com">Enviar correo</a>
+        <a class="btn-link" href="https://wa.me/573000000000" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+
+      <button class="btn-volver" id="volver-contacto">← Volver</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© Feria Digital Agropecuaria</small>
+  </footer>
+
+  <script src="funciones.js"></script>
+</body>
+</html>
