@@ -8,69 +8,107 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1>Feria Digital Agropecuaria</h1>
-    <p>Explora cultivos, fotos, historias y contáctanos.</p>
-  </header>
 
-  <main class="contenedor">
-    <!-- VISTA PRINCIPAL (MENÚ) -->
-    <section id="vista-inicio" class="vista activa">
-      <div class="grid-botones">
-        <button class="btn" data-vista="cultivo">Tipo de cultivo</button>
-        <button class="btn" data-vista="galeria">Galería de fotos</button>
-        <button class="btn" data-vista="historias">Historias</button>
-        <button class="btn btn-principal" data-vista="contacto">Contacto</button>
-      </div>
-    </section>
+<header class="header">
+  <h1>Feria Digital Agropecuaria</h1>
+  <p>Explora cultivos, fotos, historias y contáctanos.</p>
+</header>
 
-    <!-- VISTA: TIPO DE CULTIVO -->
-    <section id="vista-cultivo" class="vista">
-      <h2>Tipo de cultivo</h2>
-      <p>Aquí puedes poner información de cultivos (café, plátano, cacao, etc.).</p>
+<main class="contenedor">
 
-      <button class="btn-volver" id="volver-cultivo">← Volver</button>
-    </section>
+<!-- VISTA PRINCIPAL -->
+<section id="vista-inicio" class="vista activa">
+  <div class="grid-botones">
+    <button class="btn" data-vista="cultivo">Tipo de cultivo</button>
+    <button class="btn" data-vista="galeria">Galería de fotos</button>
+    <button class="btn" data-vista="historias">Historias</button>
+    <button class="btn" data-vista="inscripcion">Inscripción</button>
+    <button class="btn btn-principal" data-vista="contacto">Contacto</button>
+  </div>
+</section>
 
-    <!-- VISTA: GALERÍA -->
-    <section id="vista-galeria" class="vista">
-      <h2>Galería de fotos</h2>
-      <p>Después puedes agregar imágenes o tarjetas con fotos del proyecto.</p>
+<!-- CULTIVOS -->
+<section id="vista-cultivo" class="vista">
+  <h2>Tipo de cultivo</h2>
+  <p>Aquí puedes poner información de cultivos como café, cacao o plátano.</p>
 
-     <img src="img/cafe.jpg" alt="Cultivo de café">
+  <button class="btn-volver">← Volver</button>
+</section>
 
-    <!-- VISTA: HISTORIAS -->
-    <section id="vista-historias" class="vista">
-      <h2>Historias</h2>
-      <p>Cuenta historias de la vereda, productores, buenas prácticas, etc.</p>
+<!-- GALERIA -->
+<section id="vista-galeria" class="vista">
+  <h2>Galería de fotos</h2>
+  <p>Después puedes agregar imágenes del proyecto.</p>
 
-      <button class="btn-volver" id="volver-historias">← Volver</button>
-    </section>
+  <img src="img/cafe.jpg" alt="Cultivo de café"> 
 
-    <!-- VISTA: CONTACTO (NUEVA INTERFAZ) -->
-    <section id="vista-contacto" class="vista">
-      <h2>Contacto</h2>
+</section>
 
-      <div class="tarjeta">
-        <p><strong>Nombre:</strong> Alejandra Valencia Villa</p>
-        <p><strong>Correo:</strong> alejitaflorez2014@gmail.com</p>
-        <p><strong>Celular:</strong> +57 310 248 8861</p>
-        <p><strong>Ubicación:</strong> Santa Barbara, Antioquia</p>
-      </div>
+<!-- HISTORIAS -->
+<section id="vista-historias" class="vista">
+  <h2>Historias</h2>
+  <p>Aquí puedes contar historias de la vereda o de los productores.</p>
 
-      <div class="acciones">
-        <a class="btn-link" href="mailto:tucorreo@email.com">Enviar correo</a>
-        <a class="btn-link" href="https://wa.me/573000000000" target="_blank" rel="noopener">WhatsApp</a>
-      </div>
+  <button class="btn-volver">← Volver</button>
+</section>
 
-      <button class="btn-volver" id="volver-contacto">← Volver</button>
-    </section>
-  </main>
+<!-- INSCRIPCION -->
+<section id="vista-inscripcion" class="vista">
 
-  <footer class="footer">
-    <small>© Feria Digital Agropecuaria</small>
-  </footer>
+<h2>Inscripción</h2>
 
-  <script src="funciones.js"></script>
+<form id="formulario" class="formulario">
+
+<div class="campo">
+<label>Nombre</label>
+<input type="text" id="nombre" required>
+</div>
+
+<div class="campo">
+<label>Edad</label>
+<input type="number" id="edad" required>
+</div>
+
+<div class="campo">
+<label>Número de contacto</label>
+<input type="text" id="contacto" required>
+</div>
+
+<button type="submit" class="btn">Enviar</button>
+
+</form>
+
+<p id="mensaje"></p>
+
+
+</section>
+
+<!-- CONTACTO -->
+<section id="vista-contacto" class="vista">
+  <h2>Contacto</h2>
+
+  <div class="tarjeta">
+    <p><strong>Nombre:</strong> Alejandra Valencia Villa</p>
+    <p><strong>Correo:</strong> alejitaflorez2014@gmail.com</p>
+    <p><strong>Celular:</strong> +57 310 248 8861</p>
+    <p><strong>Ubicación:</strong> Santa Barbara, Antioquia</p>
+  </div>
+
+  <div class="acciones">
+    <a class="btn-link" href="mailto:alejitaflorez2014@gmail.com">Enviar correo</a>
+    <a class="btn-link" href="https://wa.me/573102488861" target="_blank">WhatsApp</a>
+  </div>
+
+  <button class="btn-volver">← Volver</button>
+</section>
+
+</main>
+
+<footer class="footer">
+  <small>© Feria Digital Agropecuaria</small>
+</footer>
+
+<script src="funciones.js"></script>
+
 </body>
-</html>
+</html> 
